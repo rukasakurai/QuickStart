@@ -14,4 +14,4 @@ container:
   endpoint: 'Azure Container Registry'
   options: -v $(Build.SourcesDirectory)/src:/app -w /app
 steps
-- script sencha app build
+- script: sencha app build
