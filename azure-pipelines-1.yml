@@ -13,5 +13,6 @@ container:
   image: ttnxpocacr.azurecr.io/ext-commercial:6.0.1
   endpoint: 'Azure Container Registry'
   options: -v $(Build.SourcesDirectory)/src:/app -w /app
-steps
+
+steps:
 - script: sencha app build
