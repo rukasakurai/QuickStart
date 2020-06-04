@@ -16,6 +16,9 @@ steps:
 - script: docker version
   displayName: 'Print Docker version'
 
+- script: docker container run --rm -v $(Build.SourcesDirectory)/src:/app -w /app ttnxpocacr.azurecr.io/ext-commercial:6.0.1 sencha app build
+  displayName: 'docker container run'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
