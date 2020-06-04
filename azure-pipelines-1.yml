@@ -11,7 +11,7 @@ pool:
  
 container:
   image: ttnxpocacrruka.azurecr.io/ext-commercial:6.0.1
-  endpoint: 'Azure Container Registry'
+  endpoint: 'ttnxpocacrruka.azurecr'
   options: -v $(Build.SourcesDirectory)/src:/app -w /app
 
 steps:
