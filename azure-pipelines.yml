@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
+- script: echo $(Build.SourcesDirectory)
   displayName: 'Run a one-line script'
 
 - script: docker version
